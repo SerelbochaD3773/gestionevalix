@@ -1,3 +1,77 @@
+:root {
+  /* === Rojos y Rosas === */
+  --col-rac: #e74c3c;    /* rojo acento */
+  --col-rqm: #B82B00;    /* rojo quemado */
+  --col-rpu: #FF0000;    /* rojo puro */
+  --col-rcm: #DC143C;    /* rojo carmesí */
+  --col-ros: #FFC0CB;    /* rosa */
+  --col-rfu: #FF69B4;    /* rosa fucsia */
+  --col-salm: #FF7F50;    /* salmón */
+  --col-ros2: #FF1493;   /* rosa intenso (deep pink) */
+
+  /* === Naranjas === */
+  --col-nos: #B86000;    /* naranja oscuro */
+  --col-nlo: #F7B733;    /* naranja logo */
+  --col-njo: #FFA500;    /* anaranjado (naranja puro) */
+
+  /* === Amarillos y Dorados === */
+  --col-dor: #B88900;    /* dorado (amarillo oscuro) */
+  --col-amo: #B8AE00;    /* amarillo mostaza (o amarillo oliva) */
+  --col-amp: #FFFF00;    /* amarillo puro */
+  --col-drb: #FFD700;    /* dorado brillante (gold) */
+
+  /* === Verdes (incluyendo Teales y Olivas) === */
+  --col-vse: #2ecc71;    /* verde secundario (o verde medio) */
+  --col-vbr: #00B81F;    /* verde brillante (o verde intenso) */
+  --col-tos: #216351;    /* teal oscuro (verde azulado oscuro) */
+  --col-vmo: #1C3831;    /* verde muy oscuro */
+  --col-tme: #1E7860;    /* teal medio (verde azulado medio) */
+  --col-vmn: #00B785;    /* verde menta (o turquesa claro verdoso) */
+  --col-vos: #008000;    /* verde oscuro (verde clásico) */
+  --col-vli: #90EE90;    /* verde lima (verde claro) */
+  --col-vol: #556B2F;    /* verde oliva */
+  --col-ace: #239bb9;    /* azul celeste (o azul claro) */
+  /* === Azules (incluyendo Cianes y Turquesas) === */
+  --col-apr: #3498db;    /* azul principal */
+  --col-aos: #2c3e50;    /* azul oscuro (o azul profundo) */
+  --col-tql: #4ECDC4;    /* turquesa logo */
+  --col-apu: #0000FF;    /* azul puro */
+  --col-acl: #ADD8E6;    /* azul claro */
+  --col-amr: #00008B;    /* azul marino */
+  --col-cia: #00FFFF;    /* cian */
+  --col-ace: #239bb9;    /* azul celeste (o azul claro) */
+  /* === Púrpuras, Violetas, Magentas e Índigos === */
+  --col-mag: #A300B8;    /* magenta */
+  --col-pin: #3F00B8;    /* púrpura intenso (o índigo fuerte) */
+  --col-lav: #6360E5;    /* lavanda (o azul púrpura) */
+  --col-mlo: #6C63FF;    /* morado logo */
+  --col-mpu: #FF00FF;    /* magenta puro (fucsia brillante) */
+  --col-vio: #EE82EE;    /* violeta */
+  --col-ind: #4B0082;    /* índigo clásico */
+
+  /* === Marrones y Beiges === */
+  --col-mrj: #633021;    /* marrón rojizo */
+  --col-mmo: #38311C;    /* marrón muy oscuro (casi negro oliva) */
+  --col-mcf: #A52A2A;    /* marrón café (o marrón estándar) */
+  --col-bei: #F5F5DC;    /* beige */
+
+  /* === Neutros (Grises, Blanco, Negro) === */
+  --col-gcl: #ecf0f1;    /* gris claro (casi blanco) */
+  --col-ngr: #000000;    /* negro */
+  --col-bla: #FFFFFF;    /* blanco */
+  --col-gme: #808080;    /* gris medio */
+  --col-gos: #A9A9A9;    /* gris oscuro (dim gray) */
+  --col-gsu: #D3D3D3;    /* gris suave (light gray) */
+  --col-pla: #C0C0C0;    /* plata */
+
+  /* === Colores de UI/Propósito Específico === */
+  /* Estos podrían ser neutros oscuros/claros, pero se definen por su uso */
+  --col-fon: #1E202E;    /* fondo oscuro (para UI) */
+  --col-txt: #F1F2F6;    /* texto claro (para UI sobre fondos oscuros) */
+  --font-page: Arial, Helvetica, sans-serif;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,12 +86,11 @@ body {
   min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
 }
-
+/* position: fixed; */
 .header {
   height: 14%;
-  width: 100%;
-  /* position: fixed; */
-  background-color: rgba(247, 245, 244, 0.541);
+  width: 100%;  
+  background-color: rgba(247, 245, 244, 0.301);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,7 +131,7 @@ body {
   font-weight: bold;
 }
 .textsesion:hover {
-  background-color: rgb(255, 128, 60);
+  background-color: #239bb9;
 }
 .container {
   display: flex;
@@ -77,7 +150,7 @@ body {
   width: 15rem;
   justify-items: center;
   align-content: space-around;
-  box-shadow: 0.5rem 0.3rem 1rem rgb(88, 88, 88);
+  box-shadow: 0.5rem 0.3rem 1rem  rgba(78, 205, 197, 0.812);
 }
 .navbar__list {
   flex-direction: column;
@@ -103,7 +176,7 @@ body {
 }
 
 .main {
-  background-color: rgba(239, 228, 228, 0.8);
+  background-color: rgba(239, 228, 228, 0.333);
   display: flex;
   flex-direction: column;
   margin-left: 18rem;
@@ -114,7 +187,7 @@ body {
 .information-block {
   display: flex;
   flex-direction: column;
-  box-shadow: 1rem 0.5rem 1.5rem rgb(158, 157, 157);
+  box-shadow: 0.5rem 0.3rem 1rem rgba(78, 205, 197, 0.829);
 }
 
 .information-block__title {
@@ -122,7 +195,7 @@ body {
   text-align: center;
   font-size: 2rem;
   padding: 1.3rem;
-  background-color: rgb(246, 180, 172);
+  background-color: #239bb9;
 }
 
 .information-block__teacher {
@@ -145,7 +218,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  background-color: rgb(244, 210, 204);
+  background-color: #239bb9;
   padding: 0.8rem;
   border-radius: 1rem;
 }
@@ -160,16 +233,17 @@ body {
 .information-block__bottom {
   text-align: center;
   padding: 0.5rem;
-  border: 2px dotted rgb(242, 115, 76);
+  border: 2px dotted #239bb9;
   border-radius: 7px;
-  background-color: aliceblue;
+  background-color: rgba(248, 188, 181, 0.687);
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
+  color: #000000;
 }
 
 .information-block__bottom:hover {
-  background-color: salmon;
+  background-color:  rgb(28, 182, 182);
 }
 
 .container-principal {
@@ -188,7 +262,7 @@ body {
 .footer {
   position: relative;
   display: flex;
-  background-color: salmon;
+  background-color: #239bb9;
   height: 5rem;
   width: 100%;
   padding: 4rem;

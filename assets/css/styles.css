@@ -30,7 +30,7 @@
   --col-vos: #008000;    /* verde oscuro (verde clásico) */
   --col-vli: #90EE90;    /* verde lima (verde claro) */
   --col-vol: #556B2F;    /* verde oliva */
-
+  --col-ace: #239bb9;    /* azul celeste (o azul claro) */
   /* === Azules (incluyendo Cianes y Turquesas) === */
   --col-apr: #3498db;    /* azul principal */
   --col-aos: #2c3e50;    /* azul oscuro (o azul profundo) */
@@ -39,7 +39,7 @@
   --col-acl: #ADD8E6;    /* azul claro */
   --col-amr: #00008B;    /* azul marino */
   --col-cia: #00FFFF;    /* cian */
-
+  --col-ace: #239bb9;    /* azul celeste (o azul claro) */
   /* === Púrpuras, Violetas, Magentas e Índigos === */
   --col-mag: #A300B8;    /* magenta */
   --col-pin: #3F00B8;    /* púrpura intenso (o índigo fuerte) */
@@ -169,7 +169,7 @@ img {
   z-index: 5;
 }
 .section {text-align: center;
-  color:  var(--col-salm);
+  color:  var(--col-ace);
   height: 225px;}
 
 
@@ -249,7 +249,7 @@ img {
 }
 .caracteristicas__h3 { 
   margin-bottom: 0.1rem;
-   color: var(--col-apu);
+   color: var(--col-ace);    /* azul celeste (o azul claro) */
    display: flex;   
    flex-wrap: wrap;  
    justify-content: center;
