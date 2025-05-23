@@ -130,9 +130,11 @@ html´{
 
 body {
     font-family: Arial, sans-serif;   
-    background-image: url('../imagenes/udelfut2.png');
+    background-image: url('../imagenes/diplomaf2.png');
     background-repeat: no-repeat;
-    background-size: auto 110%;
+    background-position: center;
+    background-color: #af242428;    
+    background-size: auto 150%;
     background-attachment: fixed;
     display: grid;
     min-height: 50vh;    
