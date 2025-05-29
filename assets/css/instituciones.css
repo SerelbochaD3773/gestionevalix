@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: orbitron, sans-serif;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
+  
 
 }
 .slide-track {
@@ -96,6 +98,16 @@ body {
 .slide img {
   width: 100%;  
 }
+.slider::before,
+.slider::after{
+ background: linear-gradient(to right, rgb(157, 237, 240,1)0%, rgba(255, 255, 255, 0)100%);
+  content: '';
+  position: absolute;  
+  width: 11%;
+  height: 38.5%;
+  z-index: 2;
+}
+
 
 
 @keyframes scroll {
@@ -146,21 +158,21 @@ h4 {
   font-weight: bold;
 }
 .neon-info-hi {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.534);
       backdrop-filter: blur(5px);
       border: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-      padding: 1px 1px;
+      color: rgb(19, 207, 192);
+      padding: 3px 10px;
       border-radius: 10px;
       display: flex;
       position: relative;
-      overflow: hidden;
+      overflow-wrap: break-word;
       box-shadow: 0 0 30px rgba(78, 205, 197, 0.01);
       transition: all 0.9s ease;
   }
   
   .neon-info-hi:hover {
-      box-shadow: 0 0 35px rgba(88, 236, 226, 0.95);
+      box-shadow: 0 0 30px, 0 0 50px rgba(88, 236, 226, 0.95);
       transform: translateY(-11px);
   }
   
@@ -174,9 +186,9 @@ h4 {
       filter: blur(9px);
       width: calc(100% + 4px);
       height: calc(100% + 4px);
-      animation: glowing 12s linear infinite;
+      animation: glowing 20s linear infinite;
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
   }
   
   .neon-info-hi:hover::before {
@@ -188,7 +200,9 @@ h4 {
       10% { background-position: 100% 0; }
       20% { background-position: 200% 0; }
       30% { background-position: 300% 0; }
-      50% { background-position: 830% 0; }
+      50% { background-position: 1030% 0; }
       70% { background-position: 300% 0; }
+      80% { background-position: 200% 0; }
+      90% { background-position: 100% 0; }
       100% { background-position: 0 0; }
-  }
+  }  
