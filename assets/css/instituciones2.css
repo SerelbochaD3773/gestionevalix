@@ -78,13 +78,13 @@ html{
 }
 
 .body{
-  background-image: url(/assets/imagenes/377850351276306432.png);
+  background-image: url(/assets/imagenes/diploma3.png);
   filter: grayscale(50%) blur(10%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;    
-  height: 150vh;
+  height: 180vh;
   /* background-color: #18688a33; */
   
 }
